@@ -1,7 +1,6 @@
 package com.planit.shoptoys.feedback.pages;
 
 import static org.junit.Assert.*;
-import org.openqa.selenium.JavascriptExecutor;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -54,9 +53,6 @@ public class FeedbackPage {
   
   public void click_contact() throws InterruptedException {
 	 contact.click();
-	 JavascriptExecutor executor = (JavascriptExecutor) driver;
-	 executor.executeScript("arguments[0].scrollIntoView(true)", contact);
-	 Thread.sleep(20);
   }
  
   public void submit_feedback() throws InterruptedException {  
